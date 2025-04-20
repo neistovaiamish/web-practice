@@ -1,1 +1,94 @@
-.
+body{
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+}
+    
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1% 10% 1% 10%;
+    border-bottom: #3D42DD 1px solid;
+    
+}
+
+header a{
+    text-decoration: none;
+    font-size: large;
+    color: #3D42DD;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.section-first{
+    display: block;
+}
+
+.section-first-title{
+    font-size: 400%;
+    margin: 30% 25% 5% 25%;
+}
+
+.section-first-content{
+    background-image: url('./images/Санкт-Петербург.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 15% 30% 2% 10%;
+}
+
+.section-first-content-info_box{
+    background-color: white;
+    width: 35%;
+    padding: 1% 1% 3% 3%;
+}
+
+#section-first-content-info_box-h4{
+    font-size: medium;
+    font-weight: normal;
+    color: #3D42DD;
+    text-shadow: 1px 1px 4px rgba(128, 128, 128, 0.433);
+}
+
+.section-first-content-info_box h3{
+    font-size: x-large;
+    font-weight: 400;
+    text-shadow: 1px 1px 4px rgba(128, 128, 128, 0.433);
+}
+
+.section-first-content-info_box p{
+    font-size: small;
+    font-weight: 350;
+    text-shadow: 1px 1px 4px rgba(128, 128, 128, 0.433);
+}
+
+.section-first-content-info_box-pointer h4{
+    font-size: smaller;
+    font-weight: 350;
+}
+
+
+
+.section-first-content-info_box-pointer-arrow_right{
+  width: 5%;
+  height: 1px;
+  background: black;
+  position: relative;
+  margin: 5%;
+}
+
+.section-first-content-info_box-pointer-arrow_right::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -4px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid black;
+}
