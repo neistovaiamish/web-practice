@@ -1,7 +1,13 @@
 body{
     font-family: "Roboto", sans-serif;
-    margin: 0;
 }
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
     
 header{
     display: flex;
@@ -25,7 +31,7 @@ header a{
 }
 
 .section-first{
-    display: block;
+    display: flex;
 }
 
 .section-first-title{
@@ -37,43 +43,60 @@ header a{
     background-image: url('./images/Санкт-Петербург.jpg');
     background-size: cover;
     background-position: center;
-    padding: 15% 30% 2% 10%;
+    padding: 15% 20% 2% 10%;
+    width: 100%;
+    display: flex;
+
 }
 
 .section-first-content-info_box{
     background-color: white;
-    width: 35%;
-    padding: 1% 1% 3% 3%;
+    width: 27%;
+    padding: 1% 2% 2% 2%;
+    margin-left: 17%;
+    margin-bottom: 5%;
 }
 
 #section-first-content-info_box-h4{
-    font-size: medium;
+    font-size: 300;
     font-weight: normal;
     color: #3D42DD;
     text-shadow: 1px 1px 4px rgba(128, 128, 128, 0.433);
+    margin-bottom: 7%;
 }
 
 .section-first-content-info_box h3{
-    font-size: x-large;
+    font-size: 400;
     font-weight: 400;
     text-shadow: 1px 1px 4px rgba(128, 128, 128, 0.433);
+    margin-bottom: 6%;
 }
 
 .section-first-content-info_box p{
-    font-size: small;
-    font-weight: 350;
-    text-shadow: 1px 1px 4px rgba(128, 128, 128, 0.433);
+    font-size: x-small;
+    font-weight: 400;
+    text-shadow: 2px 2px 4px rgba(128, 128, 128, 0.433);
+    margin-bottom: 7%;
 }
 
 .section-first-content-info_box-pointer h4{
-    font-size: smaller;
+    font-size: xx-small;
     font-weight: 350;
+    margin: 0 5% 0 6%;
 }
 
-
+.section-first-content-info_box-pointer{
+    display: flex;
+    border: black solid 1px;
+    align-items: center;
+    justify-content: space-between;
+    height: 12%;
+    width: 70%;
+    margin-bottom: 7%;
+}
 
 .section-first-content-info_box-pointer-arrow_right{
-  width: 5%;
+  width: 20%;
   height: 1px;
   background: black;
   position: relative;
@@ -92,3 +115,27 @@ header a{
     border-bottom: 4px solid transparent;
     border-left: 4px solid black;
 }
+
+.section-first-content-info_box-pointer-arrow-container{
+    border-left: black solid 1px;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.background_image{
+    display: flex;
+    width: 100%;
+    margin-left: 60%;
+}
+
+.section-first img{
+width: 10%;
+height: 12%;
+margin-left: 50%;
+margin-top: 20%;
+}
+
